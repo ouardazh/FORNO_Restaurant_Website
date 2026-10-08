@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORNO Restaurant Website</title>
+    <link rel="stylesheet" href="./css/contact.css" />
+    <script
+      src="https://kit.fontawesome.com/c11cd62dbf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- ! This is the Header------ -->
+    <header>
+      <div class="logo">
+        <p class="first-logo">forno<span>.</span></p>
+        <p class="text-logo">PIZZA ARTISANALE</p>
+      </div>
+
+      <div class="nav-bar">
+        <nav>
+          <a href="./index.html">Accueil</a>
+          <a href="#">Notre carte</a>
+          <a href="./aboutus.html">A props</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+
+        <div class="panier">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <button>Mon panier</button>
+          <p>0</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- ! This is the Main---- -->
+    <main>
+      <!-- Contact Section----- -->
+      <section class="contact-section">
+        <p class="red-txt">ON GARDE LE CONTACT</p>
+        <h1>
+          Une question ? <br />
+          Une grande <span>tablée ?</span>
+        </h1>
+        <p class="contact-paragraph">
+          Choisissez votre maison et laissez-nous un mot. Pour une pizza, une
+          occasion <br />
+          ou simplement pour dire bonjour.
+        </p>
+
+        <div class="container-contact">
+          <div class="left-card-contact">
+            <p class="contact-paragraph1">QUATRE HORIZONS, UNE MAISON</p>
+            <h2>Parlons <span>pizza.</span></h2>
+            <p class="contact-paragraph1">
+              Une réservation à préparer, un événement à imaginer ou <br />
+              une question sur la carte : tout commence par une <br> conversation.
+            </p>
+
+            <p class="info">
+              <span>01</span>Casablanca<br />
+              <small>Maroc</small>
+            </p>
+
+            <p class="info">
+              <span>02</span>Belgique<br />
+              <small>Europe</small>
+            </p>
+            <p class="info">
+              <span>03</span>Franc <br />
+              <small>Europe</small>
+            </p>
+
+            <p class="info">
+              <span>04</span>Emirats arabes unis<br />
+              <small>Moyen-Orient</small>
+              <hr>
+              <p class="contact-paragraph2">Les détails pratiques d'une adresse se précisent avec la maison concernée.</p>
+            </p>
+          </div>
+
+          <!-- ! Form ------------ -->
+           <div class="container-form">
+            <h2>Un petit <span>mot.</span> </h2>
+            <p>Les champs marqués d'un astérisque sont obligatoires.</p>
+            <form action="" id="MessageForm">
+                <div class="contaimer-name-email">
+                    <!-- ! Input Name-------------- -->
+                    <div>
+                       <label for="name">Votre nom *</label> <br>
+                        <input type="text" id="inputName" placeholder="Ex. Sara Amrani">
+                    </div>
+                    <!-- ! Input Email--------------- -->
+                     <div>
+                        <label for="email">Votre e-mail *</label> <br>
+                        <input type="email" id="inputEmail" placeholder="vous@exemple.com">
+                     </div>
+                    
+                </div>
+                <br>
+
+                <!-- ! Select Country---- -->
+                 <label for="">Votre maison FORNO *</label> <br>
+                <select name="" id="selectCountry">
+                    <option value="casablanca">Casablanca</option>
+                    <option value="belgique">Belgique</option>
+                    <option value="drance">France</option>
+                    <option value="emiratsarabesunis">Emirats arabes unis</option>
+                </select> 
+                <br> <br>
+                
+               <!-- ! Sujet ----- -->
+                <label for="">Votre sujet</label> <br>
+                <div class="suject">
+                  <div class="container-radio">
+                    <input type="radio" id="question" name="type">
+                    <label for="question">Une question</label>
+                  </div>
+
+                  <div class="container-radio">
+                    <input type="radio" id="reservation" name="type">
+                    <label for="reservation">Reservation</label>
+                  </div>
+
+                  <div class="container-radio">
+                    <input type="radio" id="evenement" name="type">
+                    <label for="evenement">Évenement</label>
+                  </div>
+                  
+                </div>
+                <br>
+                <!-- ! Votre message ----- -->
+                 <label for="">Votre message *</label> <br>
+                 <textarea name="" id="message" placeholder="Dites-nous ce que vous avez en tete ..." rows="4"></textarea>
+
+                 <p>Mode demonstration : aucun message n'est envoye.</p>
+
+                 <button id="praprerMessage" type="submit">Preparer mon message</button>
+            </form>
+           </div>
+        </div>
+      </section>
+
+      <!-- ! Question Section----- -->
+       <section class="questiion-section">
+
+        <div>
+          <p class="red-text">AVANT DE NOUS ÉCRIRE</p>
+          <h3>Les petites <span>questions.</span> </h3>
+        </div>
+
+        <div>
+          <div class="question">
+            <p>Puis-je venir avec un groupe ?</p>
+            <p class="red-text">+</p>
+          </div>
+
+          <div class="question">
+            <p>Comment signaler une allergie ?</p>
+            <p class="red-text">+</p>
+          </div>
+
+          <div class="question">
+            <p>Je prépare un événement. À qui écrire ?</p>
+            <p class="red-text">+</p>
+          </div>
+        </div>
+        
+       </section>
+    </main>
+
+    <!-- ! This is the Footer------ -->
+    <footer>
+
+      <div class="container-footer">
+        <div class="logo">
+          <p class="first-logo">forno<span>.</span></p>
+          <p class="paragraph-footer">
+            Une pâte dorée. Une table vivante. <br />La bonne part de votre
+            journée.
+          </p>
+        </div>
+
+        <div class="footer-box">
+          <h6>La maison</h6>
+          <a href="./index.html">Accueil</a>
+          <a href="#">Notre carte</a>
+          <a href="#">A propos de nous</a>
+          <a href="#">Contactez-nous</a>
+        </div>
+
+        <div class="footer-box">
+          <h6>La maison</h6>
+          <a href="./index.html">Accueil</a>
+          <a href="#">Notre carte</a>
+          <a href="./aboutus.html">A propos de nous</a>
+          <a href="./contact.html">Contactez-nous</a>
+        </div>
+
+        <div class="footer-box">
+          <h6>On se trouve?</h6>
+          <p class="paragraph-footer">
+            Une question, une grande tablée ou <br />une occasion à célèbrer.
+          </p>
+          <a href="#" id="red-link">Parlons-en</a>
+        </div>
+      </div>
+
+      <div class="last-footer">
+        <p>&copy; 2026 FORNO •󠁏󠁏 La pizza, comme on l'aime.</p>
+        <p>Commandes et messages de démonstration.</p>
+      </div>
+    </footer>
+
+    <script src="./contact.js"></script>
+  </body>
+</html>
