@@ -106,3 +106,342 @@ nav a:hover{
     gap: 30px;
 
 }
+
+
+/* ! Hero Section ------ */
+.hero-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 2rem 6%;
+}
+.first-text{
+    font-size: 11px;
+    font-weight: bold;
+}
+.first-text span{
+    color:#d83a26 ;
+    font-weight: bold;
+}
+.title-hero-section{
+    font-size: 70px;
+    font-weight: 800;
+    padding: 1.5rem 0rem;
+    line-height: 1.2
+}
+.title-hero-section span{
+    color: #d83a26;
+    font-style: italic;
+    font-family: Georgia, "Times New Roman", serif;
+}
+.paragraph-hero-sction{
+    color: #6e6a61;
+}
+#choisi-piza{
+    padding: 10px;
+    color: white;
+    background-color: #d83a26;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    margin: 1rem 0rem;
+}
+.container-text{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.num{
+    border: 1px solid #dcd6cb;
+    border-radius: 50%;
+    padding: 2px 6px;
+}
+.txt{
+    color: #6e6a61;
+    font-size: 11px;
+}
+.container-img img{
+    height: 87%;
+}
+
+/* ! Cards Section------------ */
+.paragraps-card{
+    padding: 2rem 6%;
+    border-bottom: 1px solid #dcd6cb;
+    border-top: 1px solid #dcd6cb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ! Cards Section------------ */
+.paragraps-card span{
+    color: #d83a26;
+    font-weight: bold;
+    padding-right: 20px;
+}
+.paragraps-card p{
+    font-weight: bold;
+}
+.first-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 6%;
+}
+.first-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6%;
+}
+.right-txt{
+    color: #6e6a61;
+    font-size: 12px;
+}
+.left-txt{
+    color: #d83a26;
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 0.7rem;
+}
+.left-title span{
+    color: #d83a26;
+    font-style: italic;
+    font-family: Georgia, "Times New Roman", serif;
+}
+.container-recherche{
+    padding: 1rem 6%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+}
+.container-recherche select, input{
+    border: none;
+    border: 1px solid #dcd6cb;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 250, 241);
+}
+input:focus{
+    outline: 1px solid var(--red);
+}
+.container-recherche p{
+    color: #6e6a61;
+    font-size: 12px;
+    padding: 10px 0px;
+}
+#category option:checked{
+    background-color: var(--red);
+    color: white;
+}
+#category{
+    width: 300px;
+    padding: 15px;
+    border-radius: 4px;
+    background-color: rgb(255, 250, 242);
+    /* border: 1px solid var(--red); */
+    color: var(--ink);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.container-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 4rem 6%;
+}
+.card-pizza{
+    border: 1px solid #dcd6cb;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgb(255, 250, 241);
+}
+.image-card{
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(231, 220, 201);
+    
+}
+.txt-card{
+    padding: 20px;
+    background-color:#fffaf1 ;
+}
+.container-ajouter-prix{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+    overflow: hidden;
+}
+.container-ajouter-prix p{
+    font-weight: bold;
+    font-size: 16px;
+}
+.container-ajouter-prix span{
+    font-weight: bold;
+    font-size: 10px;
+}
+.ajouterPizza{
+    border: none;
+    background-color:#d83a26 ;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+.txt-gris{
+    color: #6e6a61;
+}
+.txt-card h3{
+    padding: 10px 0px;
+}
+
+/* ! Histoire Section----- */
+.histoire-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #d83a26;
+    padding: 2rem 6%;
+    gap: 30px;
+}
+.left-histoire p{
+    color: rgb(242, 188, 176);
+    font-weight: bold;
+}
+.left-histoire h3{
+    padding-top: 10px;
+    color: rgb(255, 250, 241);
+    font-size: 50px;
+    font-weight: bold;
+}
+.left-histoire h3 span{
+    color: rgb(255, 224, 184);
+    font-style: italic;
+    font-family: Georgia, "Times New Roman", serif;
+}
+.right-histoire p{
+    color: rgb(255, 250, 241);
+    padding-bottom: 20px;
+}
+.histoire-btn {
+    color: #d83a26;
+    background-color: rgb(255, 250, 241);
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+
+}
+
+/* ! Equipe section------- */
+.equipe-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 4rem 6%;
+}
+.container-img-chefs{
+    overflow: hiden;
+    
+}
+.container-img-chefs img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.title-chefs{
+    font-weight: bold;
+    font-size: 45px;
+    padding-bottom: 1rem;
+}
+.title-chefs span{
+    color: #d83a26;
+    font-style: italic;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+}
+.text-gris-chefs{
+    color: #6e6a61;
+    padding: 8px 0px;
+}
+.info{
+    border-top: 1px solid #dcd6cb;
+    padding: 0.6rem 0rem;
+}
+.info span{
+    padding-right: 20px;
+    color: #d83a26;
+}
+.equipe-section small{
+    padding-left: 38px;
+    color: #6e6a61;
+}
+.rencontrer-link {
+    color: #a62a1b;
+    font-weight: bold;
+}
+
+
+/* ! Cartes Section -------- */
+.cartes-section{
+    padding: 3rem 6%;
+    background-color: #25241f;
+}
+.container-cart-txt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container-cartes{
+    border-top: 1px solid #dcd6cb;
+}
+.carte-parag{
+    color: rgb(252, 165, 135);
+    font-weight: 400;
+}
+.cartes-section h5{
+    color: rgb(255, 250, 241);
+    font-size: 43px;
+    font-weight: bolder;
+    padding: 1rem 0rem;
+}
+.cartes-section h5 span{
+    color: rgb(252, 165, 135);
+    font-style: italic;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+}
+
+.pays{
+    color: #dcd6cb;
+}
+.first-txt{
+    color: rgb(166, 156, 139);
+    padding: 1rem 0rem;
+}
+.second-txt{
+    color: rgb(252, 165, 135);
+    font-weight: bold;
+    padding: 1rem 0rem;
+}
+.container-cartes h6{
+    color: #dcd6cb;
+    font-weight: bold;
+    font-size: 28px;
+    padding-bottom: 1rem;
+    
+}
+.third-txt{
+    color: #dcd6cb;
+    padding: 1rem 0rem;
+    font-size: 14px;
+}
+.container-cartes a{
+    color: white;
+    font-weight: bold;
+}
+.cartes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+}
