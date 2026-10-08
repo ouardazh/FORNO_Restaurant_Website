@@ -67,6 +67,8 @@ let itemsPizza = document.getElementById("Items");
 let count = document.querySelector(".count");
 let namePizza = document.querySelectorAll(".name-pizza");
 let pricePizza = document.querySelectorAll(".price-pizza");
+let crtMessage = document.getElementById("crtMessage");
+let deletePizza = document.querySelectorAll(".delete-pizza");
 
 ajouterPizza.forEach(function (button) {
     button.addEventListener("click", function(){
@@ -75,17 +77,35 @@ ajouterPizza.forEach(function (button) {
             if (button === ajouterPizza[i]) {
                 panierPizza.push({
                     name: namePizza[i].textContent,
-                    price: pricePizza[i].textContent
+                    price: pricePizza[i].textContent,
+                    quantity: 1
                 })
                 
             }
             
         }
        count.textContent = panierPizza.length;
+       crtMessage.style.display = "none";
        itemsPizza.innerHTML ="";
        panierPizza.forEach(function(pizza){
         itemsPizza.innerHTML += `
-        <p> ${pizza.name} - ${pizza.price} </p>
+         <div class="cart-item">
+      <div class="cart-pizza-info">
+        <h3> ${pizza.name} </h3>
+        <p> ${pizza.price} /pizza </p>
+
+        <div class="quantity">
+          <button class="minus"> - </button>
+          <span> ${pizza.quantity} </span>
+          <button class="plus"> + </button>
+        </div>
+      </div>
+
+      <div class="cart-pizza-price">
+        <strong> ${parseInt(pizza.price) * pizza.quantity} MAD </strong>
+        <button class="delete-pizza"> Supprimer </button>
+      </div>
+    </div>
         `;
        })
 
@@ -93,4 +113,31 @@ ajouterPizza.forEach(function (button) {
     })
     
 });
-   
+
+deletePizza.forEach(function(button, index){
+    button.addEventListener("click", function(){
+        panierPizza.splice(index, 1);
+
+
+     
+})
+});
+
+// ----add Button----
+let buttons =  document.querySelectorAll(".ajouterPizza");
+buttons.forEach(button => {
+    button.addEventListener("click", function () {
+
+
+            buttons.forEach(btn => {
+               btn.classList.remove("added");
+               btn.innerHTML = "+ Ajouter";
+            });
+            
+        
+            this.classList.add("added");
+            this.innerHTML = "✓ Ajoutée"
+        
+        
+    })
+})

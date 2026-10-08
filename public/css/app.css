@@ -263,6 +263,9 @@ input:focus{
     background-color: rgb(231, 220, 201);
     
 }
+.image-card img:hover {
+    transform: translateY(-10px) rotate(-10deg);
+}
 .txt-card{
     padding: 20px;
     background-color:#fffaf1 ;
@@ -288,6 +291,14 @@ input:focus{
     color: white;
     padding: 6px 12px;
     border-radius: 6px;
+    transition: 0.3s;
+}
+
+.ajouterPizza.added {
+    background-color: #1c7943;
+}
+.ajouterPizza:hover{
+    opacity: 0.9;
 }
 .txt-gris{
     color: #6e6a61;
@@ -639,6 +650,8 @@ nav{
     height: 100vh;
     background-color: rgb(255, 250, 242);
     display: none;
+    z-index: 1000;
+    
 }
 .container-cart{
     display: flex;
@@ -689,3 +702,66 @@ nav{
     margin-left: 33%;
     
 }
+#Items{
+    padding: 0px 10px;
+}
+.cart-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #dcd6cb ;
+}
+.cart-pizza-info{
+    flex: 1;
+}
+.cart-pizza-info h3{
+    text-align: left;
+    margin: 0px 0px 5px;
+    font-size: 16px;
+}
+
+.cart-pizza-info p{
+    text-align: left;
+    margin:  0px 0px 10px;
+    font-size: 12px;
+}
+.quantity{
+    display: flex;
+    align-items: center;
+    border: 1px solid #dcd6cb;
+    border-radius: 5px;
+    width: fit-content;
+    overflow: hidden;
+    margin-left: 7rem;
+}
+
+.quantity button{
+    width: 30px;
+    height: 28px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(245, 241, 233);
+}
+.quantity span{
+    width: 30px;
+    text-align: center;
+}
+.cart-pizza-price{
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.cart-pizza-price strong {
+    font-size: 14px;
+}
+.delete-pizza{
+    border: none;
+    text-decoration: underline;
+    color: var(--muted);
+    cursor: pointer;
+    font-size: 11px;
+}
+
