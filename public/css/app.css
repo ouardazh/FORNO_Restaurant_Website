@@ -516,3 +516,176 @@ input:focus{
 }
 
 
+/* Responsive--------- */
+@media screen and (max-width: 600px) {
+
+
+/* ! The Header--------------- */
+nav{
+    display: none;
+}
+
+
+/* ! Hero Section ------ */
+.hero-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 2rem 6%;
+}
+.first-text{
+    font-size: 11px;
+    font-weight: bold;
+}
+.first-text span{
+    color:#d83a26 ;
+    font-weight: bold;
+}
+
+
+
+/* ! Cards Section------------ */
+.paragraps-card{
+    padding: 2rem 6%;
+    border-bottom: 1px solid #dcd6cb;
+    border-top: 1px solid #dcd6cb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ! Cards Section------------ */
+.numero{
+    display: none;
+}
+.paragraps-card span{
+    padding-right: 6px;
+}
+.paragraps-card p{
+    font-size: 11px;
+}
+
+.first-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-recherche{
+    grid-template-columns: 1fr;
+}
+.container-cards{
+    grid-template-columns: 1fr;
+}
+.txt-card{
+    padding: 20px;
+    background-color:#fffaf1 ;
+}
+
+/* ! Histoire Section----- */
+.histoire-section{
+    grid-template-columns: 1fr ;
+}
+
+
+/* ! Equipe section------- */
+.equipe-section{
+    grid-template-columns: 1fr ;
+}
+/* ! Cartes Section -------- */
+.cartes-section{
+    padding: 3rem 6%;
+    background-color: #25241f;
+}
+.container-cart-txt{
+   flex-direction: column;
+}
+
+.cartes{
+    grid-template-columns: 1fr ;
+}
+
+/* ! The Footer---- */
+
+.first-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.container-footer{
+    display: grid;
+    grid-template-columns: 1fr ;
+
+
+}
+.paragraph-footer{
+    color: #6e6a61;
+    padding-top: 1rem;
+}
+.last-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 13px;
+}
+}
+
+/* ======Cart======== */
+#cart{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 450px;
+    height: 100vh;
+    background-color: rgb(255, 250, 242);
+    display: none;
+}
+.container-cart{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dcd6cb;
+    padding: 1rem;
+
+}
+#close{
+    background-color: rgb(255, 250, 242);
+    border: none;
+    border: 1px solid #dcd6cb;
+    padding: 0.5rem 0.8rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+    
+}
+
+#cart h1 span{
+    color: var(--red);
+    padding-left: 2px;
+}
+#cart h2{
+    text-align: center;
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--red);
+    font-size: 32px;
+    padding: 1.5rem 0;
+}
+#cart h3{
+    text-align: center;
+}
+#cart p{
+    text-align: center;
+    color: var(--muted);
+    padding-top: 0.5rem;
+}
+.decouvrir-carte{
+    border: none;
+    background-color: var(--red);
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 0.7rem;
+    text-decoration: none;
+    margin-left: 33%;
+    
+}
