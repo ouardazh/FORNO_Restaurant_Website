@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* FORNO — Polices et couleurs. Aucune bibliothèque et aucune police à télécharger. */
+:root {
+  --paper: #f5f1e9;
+  --surface: #fffaf1;
+  --ink: #25241f;
+  --muted: #6e6a61;
+  --red: #d83a26;
+  --red-dark: #a62a1b;
+  --line: #dcd6cb;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--ink);
+  background-color: var(--paper);
+}
+
+h1, h2, h3 {
+  font-weight: 800;
+}
+
+em {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+button, input, textarea {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ! The Header--------------- */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 6%;
+    border-bottom: 1px solid #dcd6cb;
+}
+
+.first-logo{
+    font-weight: bold;
+    font-size: 32px;
+}
+.first-logo span{
+    font-weight: bolder;
+    font-size: 28px;
+    color: #a62a1b;
+}
+.text-logo{
+    font-size: 9px;
+    font-weight: 300;
+}
+nav{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav a:hover{
+    border-bottom: 2px solid var(--red);
+}
+.panier{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #dcd6cb;
+    padding: 8px ;
+    border-radius: 6px;
+}
+.panier button {
+    border: none;
+}
+.panier:hover {
+    border: 1px solid var(--red);
+}
+
+.panier p{
+    background-color: #d83a26;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    padding: 0 4px;
+}
+.nav-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
