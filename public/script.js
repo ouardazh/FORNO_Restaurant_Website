@@ -38,3 +38,59 @@ search.addEventListener("input", function(){
         }
     });
 })
+
+
+// -----Category-----------
+let category = document.getElementById("category");
+
+category.addEventListener("change", function(){
+     
+        pizzas.forEach(function(pizza){
+            let type = pizza.querySelector(".txt-gris").textContent.toLowerCase();
+
+            if (category.value === "all" || type.includes(category.value)) {
+                pizza.style.display = ""; 
+            }
+            else{
+                pizza.style.display = "none";
+            }
+        })
+        
+    
+})
+
+// ----add pizza------
+let panierPizza = [];
+
+let ajouterPizza = document.querySelectorAll(".ajouterPizza");
+let itemsPizza = document.getElementById("Items");
+let count = document.querySelector(".count");
+let namePizza = document.querySelectorAll(".name-pizza");
+let pricePizza = document.querySelectorAll(".price-pizza");
+
+ajouterPizza.forEach(function (button) {
+    button.addEventListener("click", function(){
+
+        for (let i = 0; i < ajouterPizza.length; i++) {
+            if (button === ajouterPizza[i]) {
+                panierPizza.push({
+                    name: namePizza[i].textContent,
+                    price: pricePizza[i].textContent
+                })
+                
+            }
+            
+        }
+       count.textContent = panierPizza.length;
+       itemsPizza.innerHTML ="";
+       panierPizza.forEach(function(pizza){
+        itemsPizza.innerHTML += `
+        <p> ${pizza.name} - ${pizza.price} </p>
+        `;
+       })
+
+       
+    })
+    
+});
+   
